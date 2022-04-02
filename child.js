@@ -21,7 +21,6 @@ class Child extends Component {
     if (window.innerWidth < 500) {
       this.setState({ innerWidth: window.innerWidth });
     }
-    console.log("Child componentWillMount");
   }
 
   componentWillReceiveProps() {
@@ -31,7 +30,6 @@ class Child extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     console.log("shouldComponentUpdate");
     return true;
-    //return false;
   }
 
   componentDidMount() {
